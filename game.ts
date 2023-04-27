@@ -28,7 +28,7 @@ export function makeMove(board : (null | string)[][], move : [number, number], p
     if (board[move[0]-1][move[1]-1] == null) {
         board[move[0]-1][move[1]-1] = player
     } else {
-        throw new Error(`Invalid move, ${move} position already occupied.`);
+        throw new Error(`Invalid move, position already occupied.`);
     }
     return board;
 } 
